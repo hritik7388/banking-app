@@ -1,0 +1,42 @@
+{
+  "port": 1987,
+  "hostAddress": "localhost:1987",
+  "databaseHost": "127.0.0.1",
+  "databasePort": "27017",
+  "databaseName": "Banking-App-dev",
+  "jwtsecret": "nodejwt",
+  "jwtresetsecret": "nodejwt",
+  "jwtOptions": {
+    "expiresIn": "30d"
+  },
+  "nodemailer": {
+    "service": "gmail",
+    "email": "mobiloitte.node@gmail.com",
+    "password": "wdbakhorlxmmqrhg"
+  },
+ 
+  "swaggerDefinition": {
+    "info": {
+      "title": "Banking-App(Rajat)",
+      "version": "2.0",
+      "description": "Banking-App API Docs"
+    },
+   
+
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+
+    "nowPayment": {
+      "apiKey": "7KF1ZNT-H954J15-HSXEPZ9-BQE96XJ",
+      "paymentURL": "https://nowpayments.io/pos-terminal/permanent"
+    }
+
+ 
+}
